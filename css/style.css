@@ -619,6 +619,10 @@ footer{
     padding: 0;
     box-sizing: border-box;
   }
+  .main__container{
+   
+   margin: 0 auto o auto;
+  }
   .hero{
     position: relative;    
   }
@@ -667,7 +671,9 @@ footer{
   }
 
   .details{
-    margin:120px 40px 120px 40px;
+    margin:120px auto 120px auto;
+    width: 689px;
+    height: 1131px;
   }  
   .details__item1{
     display: grid;
@@ -776,6 +782,10 @@ footer{
 }
 
 /* Estilos para location.html | Diseño Tablet */
+.main__container-location{
+  max-width: 1200px;
+  margin: 0 auto 0 auto;
+}
 .hero__location{
   position: relative;
 }
@@ -955,7 +965,8 @@ footer{
 /* ************************************ */
 
 @media screen and (min-width:1440px) {
-  
+  .main__container{}
+
   .hero{
     position: relative; 
     height: 70vh; 
@@ -969,8 +980,8 @@ footer{
   .hero::before {
     content: ""; 
     display: block; /* Hace que el elemento sea visible */
-    width: 450px;
-    height: 800px;
+    width: 31%;
+    height: 103%;
     background-color: black;
     position: absolute; 
     top: 0;
@@ -979,10 +990,10 @@ footer{
   .hero__img-desktop{
     display: block;
     position: absolute;
-    top:0px;  
-    right: 455px;
-    width: 540px;
-    height: 800px;
+    top:0;  
+    right: 32%;
+    width: 37%;
+    height: 103%;
     object-fit:cover;
     object-position: center;      
   }
@@ -1000,29 +1011,29 @@ footer{
   .hero__subtitle{
     display: block;
     position: absolute;
-    top:180px;
-    right:160px;
+    top:25%;
+    right:11%;
     width: 350px;
     height: 160px;
     font-size: 22px;    
   }
   .hero__button{
     position: absolute;
-    top: 390px;
-    right: 220px;
+    top: 53%;
+    right:15%;
     width: 290px;
     height: 72px;  
   }
 
   .details{
-    margin: 160px 164px 140px 164px;
+    margin: 160px auto 140px auto;
     width: 1110px;
-    height: 1150px;   
+    height: 1150px;
   }  
   .details__item1{
     display: grid;    
     grid-template-columns: 1fr 1fr;
-    grid-template-rows: 1fr 1fr;     
+    grid-template-rows: 1fr 1fr; 
   }
   .details__item1-h2-container{
     grid-column-start: 1;
@@ -1126,7 +1137,10 @@ footer{
 }
 
 /* Estilos para location.html | Diseño Desktop 1440px */
-
+.main__container-location{
+  max-width: 1440px;
+  margin: 0 auto 0 auto;
+}
 .hero__location{
   position: relative;
 }
@@ -1194,7 +1208,7 @@ footer{
 .details__location{
   display: flex;
   position: relative;
-  width: 100%;
+  width: 1440px;
   height: 548px;
 }
 .details__location-h1{
@@ -1206,8 +1220,8 @@ footer{
   font-weight: bold;
   line-height: 70px;
   position: absolute;
-  top: 104px;
-  left:165px;
+  top: 20%;
+  left:10%;
   padding: 0;
 }
 .details__location-h2{
